@@ -4,12 +4,14 @@
     {
         static void Main(string[] args)
         {
-            double a, b, c, n;
-            Console.WriteLine("digite o numero: !");
-            a = Convert.ToDouble(Console.ReadLine());
-            b = Convert.ToDouble(Console.ReadLine());
-            c = Convert.ToDouble(Console.ReadLine());   
-            
+            decimal temperaturaFahrenheit, temperaturaCelsius;
+
+            Console.WriteLine(" Digite a temperatura em Graus Fahrenheit: ");
+            temperaturaFahrenheit = Convert.ToDecimal(Console.ReadLine());
+
+            temperaturaCelsius = (temperaturaFahrenheit - 32) * 5 / 9;
+            Console.WriteLine("a temperatura em graus celsius é: " + temperaturaCelsius);
+
 
         }
     }

@@ -1,22 +1,41 @@
-﻿namespace exercicio_28
+﻿namespace exercicioo_28
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Hello, World!");
 
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 100; i++) 
             {
-                Console.WriteLine($"{1}*{i}={1*i}\t{2}*{i}={2 * i}\t{3}*{i}={3 * i}\t{4}*{i}={4 * i}\t{5}*{i}={5* i}\t{6}*{i}={6 * i}\t{7}*{i}={7 * i}\t{8}*{i}={8 * i}\t{9}*{i}={9 * i}\t{10}*{i}={10 * i}");
+             if (i % 3 == 0 && i % 5 ==0 )
+                {
+                    Console.WriteLine("fizzbuzz");
+
+                }
+                else if (i % 3 == 0 )
+                {
+                    Console.WriteLine("fizz");
+                }
+
+             else if (i %5 == 0)
+
+              {
+                    Console.WriteLine("Buzz");
+              }
+             else 
+                {
+                    Console.WriteLine(Convert.ToString(i)+" "); 
+                        
+                }    
+
+
+            
             }
 
+
+
         }
-
-
     }
-
-
-
 }
